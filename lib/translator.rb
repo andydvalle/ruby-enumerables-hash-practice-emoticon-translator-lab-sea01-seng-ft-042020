@@ -33,6 +33,4 @@ def get_english_meaning(yaml, english_element)
       end
       end
     end
-  end
-  
 end

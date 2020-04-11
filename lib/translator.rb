@@ -28,6 +28,5 @@ def get_english_meaning(yaml, english_element)
   uploaded_hash.each do |key, inner_hash|
       binding.pry
       puts key
-    end
   end
 end

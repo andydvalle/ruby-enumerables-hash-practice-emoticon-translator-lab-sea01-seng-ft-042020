@@ -31,6 +31,8 @@ def get_english_meaning(yaml, english_element)
       if element == english_element
         return key
       end
+    end
+    if true 
       puts "Sorry, that emoticon was not found"
     end
   end

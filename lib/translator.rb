@@ -27,9 +27,7 @@ def get_english_meaning(yaml, english_element)
   
   uploaded_hash.each do |key, inner_hash|
   binding.pry
-    if true 
       message = "Sorry, that emoticon was not found"
       puts message
-    end
   end
 end

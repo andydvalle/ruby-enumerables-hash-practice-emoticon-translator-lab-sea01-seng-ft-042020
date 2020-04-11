@@ -25,11 +25,11 @@ end
 def get_english_meaning(yaml, english_element)
   uploaded_hash = load_library(yaml)
   
-    uploaded_hash.each do |emoticon_name, inner_hash|
+    uploaded_hash.each do |key, inner_hash|
     inner_hash.each do |english_japanese, element|
       binding.pry
       if element == english_element
-        return emoticon_name
+        return key
       end
       end
     end

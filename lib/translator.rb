@@ -30,10 +30,8 @@ def get_english_meaning(yaml, english_element)
       #binding.pry
       if element == english_element
         return key
-      else
-        puts "Sorry, that emoticon was not found"
       end
-      end
+      if 
     end
   end
 end

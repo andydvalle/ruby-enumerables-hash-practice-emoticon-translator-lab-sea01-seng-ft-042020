@@ -26,8 +26,8 @@ def get_english_meaning(yaml, english_element)
   uploaded_hash = load_library(yaml)
   
   uploaded_hash.each do |key, inner_hash|
-      puts key
       binding.pry
+      puts key
     end
   end
 end

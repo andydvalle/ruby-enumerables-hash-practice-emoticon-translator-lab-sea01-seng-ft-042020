@@ -27,7 +27,7 @@ def get_english_meaning(yaml, english_element)
   
   uploaded_hash.each do |key, inner_hash|
       inner_hash.each do |english_japanese, element|
-      binding.pry
+      #binding.pry
       if element == english_element
         return key
       end

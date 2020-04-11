@@ -22,13 +22,14 @@ def get_japanese_emoticon
   # code goes here
 end
 
-def get_english_meaning(yaml, element)
+def get_english_meaning(yaml, english_element)
   load_library(yaml)
   
   emoticon_hash.each do |emoticon_name, inner_hash|
     inner_hash.each do |key, element|
-      if element 
-      
+      if inner_hash[:english] == english_element
+        return inner_hash[:japanese]
+      end
     end
   end
 end

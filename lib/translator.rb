@@ -13,7 +13,7 @@ def load_library(yaml)
     inner_hash[:english] = emoticon_array[0]
     inner_hash[:japanese] = emoticon_array[1]
     emote = emoticon_hash[emoticon_name] = inner_hash
-    emoticon_hash << emote
+    emote
   end
   emoticon_hash
 end

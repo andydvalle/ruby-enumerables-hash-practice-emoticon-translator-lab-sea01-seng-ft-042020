@@ -8,7 +8,7 @@ def load_library(yaml)
 
   emoticon_hash = {}
   emoticons.each do |emoticon_name, emoticon_array|
-    binding.pry
+    #binding.pry
     inner_hash = {}
     inner_hash[:english] = emoticon_array[0]
     inner_hash[:japanese] = emoticon_array[1]

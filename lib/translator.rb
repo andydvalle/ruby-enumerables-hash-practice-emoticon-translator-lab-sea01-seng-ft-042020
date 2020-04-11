@@ -23,5 +23,5 @@ def get_japanese_emoticon
 end
 
 def get_english_meaning(yaml, element)
-  # code goes here
+  load_library(yaml)
 end

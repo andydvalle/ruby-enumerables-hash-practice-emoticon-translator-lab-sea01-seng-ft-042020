@@ -25,5 +25,10 @@ end
 def get_english_meaning(yaml, element)
   load_library(yaml)
   
-  
+  emoticon_hash.each do |emoticon_name, inner_hash|
+    inner_hash.each do |key, element|
+      if element 
+      
+    end
+  end
 end

@@ -28,7 +28,7 @@ def get_english_meaning(yaml, english_element)
     uploaded_hash.each do |emoticon_name, inner_hash|
     inner_hash.each do |english_japanese, english_element|
       if inner_hash[:english] == english_element
-        return inner_hash[:japanese]
+        return emoticon_name
       end
     end
   end

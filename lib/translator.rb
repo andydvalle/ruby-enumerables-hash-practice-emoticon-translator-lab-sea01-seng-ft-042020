@@ -31,7 +31,7 @@ def get_english_meaning(yaml, english_element)
       if element == english_element
         return key
       end
-      if 
+      if inner_hash.any?
     end
   end
 end

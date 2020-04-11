@@ -18,8 +18,17 @@ def load_library(yaml)
 end
 
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(yaml, english_emoticon)
+  uploaded_hash = load_library(yaml)
+  
+  uploaded_hash.each do |emoticon_name, inner_hash|
+    inner_hash.each do |english_japanese, element|
+      if english_emoticon == element
+        return inner_hash[:japanese]
+      end
+    end
+  end
+  p "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(yaml, japanese_element)
@@ -27,7 +36,7 @@ def get_english_meaning(yaml, japanese_element)
   
   uploaded_hash.each do |key, inner_hash|
       inner_hash.each do |english_japanese, element|
-      if element == japanese_element
+      if japanese_element == element
         return key
       end
     end

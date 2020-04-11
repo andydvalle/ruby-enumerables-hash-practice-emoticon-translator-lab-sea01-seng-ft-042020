@@ -31,6 +31,7 @@ def get_english_meaning(yaml, english_element)
       if element == english_element
         return emoticon_name
       end
+      end
     end
   end
   

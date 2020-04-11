@@ -26,8 +26,10 @@ def get_english_meaning(yaml, english_element)
   uploaded_hash = load_library(yaml)
   
   uploaded_hash.each do |key, inner_hash|
-  binding.pry
-      message = "Sorry, that emoticon was not found"
-      puts message
+      inner_hash.each do |english_japanese, element|
+      if element == english_element
+        return key
+      end
+    end
   end
 end

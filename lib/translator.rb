@@ -32,5 +32,6 @@ def get_english_meaning(yaml, english_element)
         return key
       end
       end
+      uploaded_hash
     end
 end
